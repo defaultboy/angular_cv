@@ -1,0 +1,35 @@
+<br/><br/>
+<p>about me</p>
+
+<p ng-show="marek">{{someText}}</p>
+
+<br/>
+<hr>
+<p>the person is.... {{thePerson}}</p>
+<br/>
+
+<ul>
+   <li ng-repeat="item in skills">
+     {{item.title}}
+     <br/>
+     <small ng-show="item.proudOfIt">{{item.somethingElse}}</small>
+     <br/>
+     <skill-bar percentage="{{item.percentage}}"/>
+   </li>
+
+</ul>
+
+
+<br/>
+
+<ul>
+   <li ng-repeat="apple in programs">
+     {{apple.title}}
+   </li>
+
+</ul>
+
+
+<br/>
+
+<br/>
