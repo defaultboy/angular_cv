@@ -8,21 +8,13 @@
  * Controller of the angularApp
  */
 angular.module('angularApp')
-  .controller('aboutCtrl', function ($scope, amazingCopy, $http) {
+  .controller('aboutCtrl', function ($scope, amazingCopy) {
 
+    $scope.availabile = true;
 
-  	$http.get('api/mything').then(function (data){
-       $scope.myNewData = data;
-  	}, function (err){
-       console.log('omg, error!', err);
- 	});
-
-  	$scope.thePerson = amazingCopy.personA;
+    $scope.thePerson = amazingCopy.personA;
 
     $scope.bingo = 'hey guys';
-    $scope.someText = 'music!';
-
-    $scope.marek = true;
 
     $scope.skills = [
        {
@@ -43,16 +35,6 @@ angular.module('angularApp')
        	 somethingElse: 'Not bad.',
        	 percentage: '80%'
        }
-    ];
-
-    $scope.programs = [
-	      {
-	      	title: 'bla'
-	      },
-	      {
-	      	title: 'bingo'
-	      }
-
     ];
 
   });
