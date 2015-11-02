@@ -19,6 +19,10 @@ angular
   //
   // Now set up the states
   $stateProvider
+    .state('landing', {
+      url: '/',
+      templateUrl: 'views/landing.html'
+    })
     .state('about', {
       url: '/about',
       templateUrl: 'views/about.html',

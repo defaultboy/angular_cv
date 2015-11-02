@@ -10,7 +10,6 @@ ul {
   padding:0;
 }
 
-
 li {
   float:left;
   width:100%;
@@ -19,6 +18,39 @@ li {
   list-style-type:none;
 }
 
+header {
+  h1 {
+    margin-top:0;
+  }
+  nav {
+    margin:8px 0 0 15px;
+  }
+  li {
+    width:auto;
+    margin-right:15px;
+    a {
+      padding:5px;
+      background:#CCC;
+      transition:all 0.2s ease;
+      &:hover,
+      &:focus {
+        background:#EEE;
+      }
+    }
+  }
+}
+
+.main-wrapper {
+  clear:both;
+}
+
+.pull-left {
+  float:left;
+}
+
+.pull-right {
+  float:right;
+}
 
 skill-bar {
   display:block;

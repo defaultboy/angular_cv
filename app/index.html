@@ -16,13 +16,9 @@
   </head>
   <body ng-app="angularCvApp">
 
+    <ng-include src="'views/partials/header.html'"></ng-include>
 
-
-    <a ui-sref="about">about</a>
-    <a ui-sref="contact">contact</a>
-
-    <div ui-view></div>
-
+        <div ui-view class="main-wrapper"></div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
