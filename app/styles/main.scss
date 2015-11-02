@@ -26,6 +26,10 @@ li {
   list-style-type:none;
 }
 
+img {
+  max-width:100%;
+}
+
 header {
   float:left;
   width:100%;
@@ -84,5 +88,32 @@ skill-bar {
   .bar {
     padding:5px;
     background:#CCC;
+  }
+}
+
+.projects {
+  * {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+  }
+  .img-wrap {
+    max-width:150px;
+    padding-right:30px;
+  }
+  li {
+    float:left;
+    width:50%;
+    padding:15px 30px;
+    &:nth-child(odd) {
+      clear:both;
+    }
+    .inner {
+      display:inline-block;
+      vertical-align:top;
+      width:100%;
+      background:#EEE;
+      padding:7.5px;
+    }
   }
 }

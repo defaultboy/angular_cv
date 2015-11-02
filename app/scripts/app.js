@@ -28,6 +28,11 @@ angular
       templateUrl: 'views/about.html',
       controller: 'aboutCtrl'
     })
+    .state('projects', {
+      url: '/projects',
+      templateUrl: 'views/projects.html',
+      controller: 'projectsCtrl'
+    })
     .state('contact', {
       url: '/contact',
       templateUrl: 'views/contact.html',
