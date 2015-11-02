@@ -10,8 +10,6 @@
 angular.module('angularCvApp')
   .controller('aboutCtrl', function ($scope) {
 
-    $scope.available = true;
-
     $scope.skills = [
        {
        	 title: 'HTML',

@@ -10,6 +10,6 @@
 angular.module('angularCvApp')
   .controller('headerCtrl', function ($scope, globalCopy) {
 
-    $scope.name = globalCopy.name;
+    $scope.globalCopy = globalCopy;
 
   });

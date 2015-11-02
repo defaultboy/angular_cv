@@ -1,10 +1,18 @@
 <header ng-controller="headerCtrl">
   <div class="pull-left">
-    <h1><a ui-sref="landing">{{name}} CV</a></h1>
+    <h1><a ui-sref="landing">{{globalCopy.name}} CV</a></h1>
   </div>
 
   <nav class="pull-left">
     <li><a ui-sref="about">about</a></li>
     <li><a ui-sref="contact">contact</a></li>
   </nav>
+
+  <div ng-class="{available: globalCopy.available,
+                unavailable: !globalCopy.available}"
+       class="availability pull-right">
+    <span ng-if="globalCopy.available">I'm available!</span>
+    <span ng-if="!globalCopy.available">I'm unavailable.</span>
+  </div>
+
 </header>

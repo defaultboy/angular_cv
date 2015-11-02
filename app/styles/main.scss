@@ -55,6 +55,18 @@ header {
   }
 }
 
+.availability {
+  margin:0;
+  padding:5px;
+  &.available {
+    background:#8DCA5E;
+  }
+  &.unavailable {
+    background:darkred;
+    color:#FFF;
+  }
+}
+
 .main-wrapper {
   clear:both;
 }
