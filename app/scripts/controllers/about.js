@@ -2,17 +2,15 @@
 
 /**
  * @ngdoc function
- * @name angularCvApp.controller:AboutCtrl
+ * @name angularCvApp.controller:aboutCtrl
  * @description
  * # AboutCtrl
  * Controller of the angularCvApp
  */
 angular.module('angularCvApp')
-  .controller('aboutCtrl', function ($scope, amazingCopy) {
+  .controller('aboutCtrl', function ($scope) {
 
     $scope.available = true;
-
-    $scope.thePerson = amazingCopy.personA;
 
     $scope.skills = [
        {
