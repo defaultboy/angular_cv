@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularApp').directive('skillBar', function(){
+angular.module('angularCvApp').directive('skillBar', function(){
 
   return {
     restrict: 'EA',

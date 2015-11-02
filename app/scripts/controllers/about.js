@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularApp.controller:AboutCtrl
+ * @name angularCvApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the angularApp
+ * Controller of the angularCvApp
  */
-angular.module('angularApp')
+angular.module('angularCvApp')
   .controller('aboutCtrl', function ($scope, amazingCopy) {
 
     $scope.available = true;

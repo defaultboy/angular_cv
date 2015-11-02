@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name angularApp
+ * @name angularCvApp
  * @description
- * # angularApp
+ * # angularCvApp
  *
  * Main module of the application.
  */
 angular
-  .module('angularApp', [
+  .module('angularCvApp', [
     'ngRoute',
     'ngSanitize',
     'ui.router'

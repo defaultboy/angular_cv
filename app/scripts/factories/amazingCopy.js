@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularApp').factory('amazingCopy', function(){
+angular.module('angularCvApp').factory('amazingCopy', function(){
 
   var copy = {
   	personA: 'Marek',
