@@ -16,9 +16,8 @@ angular
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
    $urlRouterProvider.otherwise('/');
-  //
-  // Now set up the states
-  $stateProvider
+
+   $stateProvider
     .state('landing', {
       url: '/',
       templateUrl: 'views/landing.html'
@@ -30,14 +29,22 @@ angular
     })
     .state('projects', {
       url: '/projects',
-      templateUrl: 'views/projects.html',
-      controller: 'projectsCtrl'
+      templateUrl: 'views/projects/projects.html',
+    })
+    .state('projects.all', {
+      url: '/all',
+      templateUrl: 'views/projects/all.html',
+      controller: 'projectsAllCtrl'
+    })
+    .state('projects.individual', {
+      url: '/:id',
+      templateUrl: 'views/projects/individual.html',
+      controller: 'projectIndividualCtrl'
     })
     .state('contact', {
       url: '/contact',
       templateUrl: 'views/contact.html',
       controller: 'contactCtrl'
     });
-
 
   });

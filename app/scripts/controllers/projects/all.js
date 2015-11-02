@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name angularCvApp.controller:projectsCtrl
+ * @name angularCvApp.controller:projectsAllCtrl
  * @description
  * # AboutCtrl
  * Controller of the angularCvApp
  */
 angular.module('angularCvApp')
-  .controller('projectsCtrl', function ($scope) {
+  .controller('projectsAllCtrl', function ($scope) {
 
 
     //try replacing this with a $http GET to a JSON file.
