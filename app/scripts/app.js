@@ -30,7 +30,8 @@ angular
     })
     .state('contact', {
       url: '/contact',
-      templateUrl: 'views/contact.html'
+      templateUrl: 'views/contact.html',
+      controller: 'contactCtrl'
     });
 
 
