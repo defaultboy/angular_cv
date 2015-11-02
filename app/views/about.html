@@ -8,10 +8,7 @@
 
 <ul>
    <li ng-repeat="item in skills">
-     {{item.title}}
-     <br/>
-     <small ng-show="item.proudOfIt">{{item.somethingElse}}</small>
-     <br/>
+     <h3>{{item.title}}<small ng-show="item.showDescription"> - {{item.description}}</small></h3>
      <skill-bar percentage="{{item.percentage}}"/>
    </li>
 

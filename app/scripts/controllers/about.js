@@ -10,30 +10,34 @@
 angular.module('angularApp')
   .controller('aboutCtrl', function ($scope, amazingCopy) {
 
-    $scope.availabile = true;
+    $scope.available = true;
 
     $scope.thePerson = amazingCopy.personA;
-
-    $scope.bingo = 'hey guys';
 
     $scope.skills = [
        {
        	 title: 'HTML',
-       	 proudOfIt: true,
-       	 somethingElse: 'I really like it.',
-       	 percentage: '90%'
+       	 showDescription: true,
+       	 description: 'HyperText Markup Language',
+       	 percentage: 95
        },
        {
          title: 'CSS',
-       	 proudOfIt: false,
-       	 somethingElse: 'its amazing',
-       	 percentage: '85%'
+       	 showDescription: true,
+       	 description: 'Cascading Style Sheets',
+       	 percentage: 95
        },
        {
-         title: 'javascript',
-       	 proudOfIt: true,
-       	 somethingElse: 'Not bad.',
-       	 percentage: '80%'
+         title: 'JS',
+       	 showDescription: true,
+       	 description: 'JavaScript',
+       	 percentage: 80
+       },
+       {
+         title: 'AngularJS',
+         showDescription: true,
+         description: 'JavaScript MVW Framework',
+         percentage: 60
        }
     ];
 
